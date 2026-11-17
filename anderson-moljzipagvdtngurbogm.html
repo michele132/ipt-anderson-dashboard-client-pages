@@ -1,0 +1,674 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anderson GMI Insurance Agency Dashboard</title>
+<style>
+:root { --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --color-bg:#f7f6f2; --color-panel:#ffffff; --color-fg:#1f1e1b; --color-fg-muted:#6b675e; --color-border-line:#e3e0d7;
+  --color-ok:#2f7d4f; --color-warn:#a2541b; --color-bad:#b3261e;
+  --cds-gap-xs:6px; --cds-gap-sm:10px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:32px;
+  --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:18px; --cds-radius:10px;
+  --cds-font-size-title:30px; --cds-font-size-heading:19px; --cds-font-size-body:15px; --cds-font-size-caption:13px; --cds-font-weight-medium:600;
+  color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --color-bg:#1b1a17; --color-panel:#24231f; --color-fg:#ecebe6; --color-fg-muted:#a6a298; --color-border-line:#3a3832; --color-ok:#5fbf86; --color-warn:#e0955a; --color-bad:#f07a70; color-scheme: dark; } }
+:root[data-theme="dark"] { --color-bg:#1b1a17; --color-panel:#24231f; --color-fg:#ecebe6; --color-fg-muted:#a6a298; --color-border-line:#3a3832; --color-ok:#5fbf86; --color-warn:#e0955a; --color-bad:#f07a70; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 15px; }
+.rose-page { max-width: 1120px; margin: 0 auto; padding: 28px 16px 48px; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head><body><div class="rose-page">
+<script type="application/json" id="rose-data">{"data": {"action_items": {"people": [{"key": "brennan", "section": "sales", "order": 1, "name": "Brennan Gregory", "role": "Sales Director", "active": "Yes", "match": "brennan", "working_on": "Defining a new sales culture around DATA (Dependable, Aggressive, Tough, Accountable), to be introduced at a group meeting with the sales agents followed by individual check-ins. Coaching Ben in his new sales-agent role, starting with personal lines and small commercial leads. Plans to learn agency operations (carrier relations, loss ratios, financials) from Lance.", "as_of": "2026-11-11", "source": "Fathom: Patrick and Brennan 1:1 (Nov 11), Org chart meeting (Nov 9); recap email (Nov 11)", "history": "[]"}, {"key": "lance", "section": "leadership", "order": 1, "name": "Lance Anderson", "role": "Owner · leadership call with Patrick & Savannah", "active": "Yes", "match": "anderson leadership", "working_on": "Leadership team (Lance, Brennan, Melissa, Cristal) is setting 2027 goals ahead of a full-group review Nov 18. New monthly production reports are improving data in Hawksoft and AgencyZoom. Launching a direct Google Ads campaign; Ben now focuses on sales.", "as_of": "2026-11-04", "source": "Fathom: Anderson Leadership Call (Nov 4)", "history": "[{\"as_of\": \"2026-10-21\", \"meeting\": \"Anderson Leadership Call\", \"working_on\": \"Brennan moving into a Sales Director role as a coach for producers: bi-weekly group huddles and monthly 1:1s. Monthly Hawksoft reports now show each producer's premium; adding individual retention vs. the 87% benchmark, the dollar value of each retention point and annual goals. Shift toward higher-value, higher-retention business. VAs re-quoting terminated auto policies and older leads, with an incentive program. Large renewal moving from State Auto to Liberty (~$200K) due 11/8.\"}, {\"as_of\": \"2026-10-14\", \"meeting\": \"Anderson Leadership Call\", \"working_on\": \"Soft-market plan: VAs build a win-back list from 12 months of lost opportunities in Hawksoft; an AgencyZoom pipeline will recycle leads long term. Brennan to run 2026 reviews and 2027 goal-setting with producers. Producers own welcome calls for lender-referred clients. New monthly Hawksoft report shows each producer's YTD and prior-month new business. First org chart draft presented Friday.\"}]"}, {"key": "managers", "section": "service", "order": 1, "name": "Melissa & Cristal", "role": "Commercial Lines Manager & Personal Lines Manager", "active": "Yes", "match": "melissa, cristal", "working_on": "Finalized the new org chart and job descriptions (Nov 9) and presented them to the team Nov 10; Brennan reports it went well, with the new management roles for Melissa, Cristal and Brennan made clear and real delegation away from Lance. VAs become the first point of contact for calls and non-licensed tasks; simple requests go to the first available person, complex ones to the assigned account manager. Savannah followed up Nov 12 to ask whether individual job descriptions and the VA process were covered or are the next step, and asked Cristal for the latest org chart and job descriptions ahead of the Nov 18 call. Savannah is also helping Cristal organize a shared Google Drive for SOPs, workflows and reference guides.", "as_of": "2026-11-12", "source": "Fathom: Melissa, Cristal, Brennan, and Savannah Meet (Nov 9); Savannah emails (Nov 9–12); Brennan email (Nov 11)", "history": "[]"}], "recruiting": [], "action_items": [{"key": "t1", "owner": "Lance Anderson", "task": "Email Stephanie to add Patrick and Savannah to the monthly production report", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-10", "done_note": "Lance's Nov 10 email confirms Stephanie will copy Patrick, Savannah and Brennan on the monthly production reports going forward."}, {"key": "t2", "owner": "Lance Anderson", "task": "Present the new org chart to the team", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-10", "done_note": "Savannah's Nov 11 follow-up confirms the new org chart was presented at the Nov 10 team meeting."}, {"key": "t3", "owner": "Lance Anderson", "task": "Communicate Ben’s sales-focused role to him", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-11", "done_note": "Brennan's Nov 11 1:1 with Patrick confirms Ben has moved into a sales-agent role focused on personal lines and small commercial leads."}, {"key": "t4", "owner": "Lance Anderson", "task": "Launch the direct Google Ads campaign", "due": "", "active": "Yes", "from": "Anderson Leadership Call (Nov 4)", "done_on": "", "done_note": ""}]}, "library": {"files": [{"id": "17jLdmeC4J93ctXKTVdMakEAEcYXBazKkJD8o9N0wzY0", "title": "Anderson Insurance Leadership Call Agenda", "mimeType": "application/vnd.google-apps.document", "modifiedTime": "2026-11-13T12:42:33.645Z", "viewUrl": "https://docs.google.com/document/d/17jLdmeC4J93ctXKTVdMakEAEcYXBazKkJD8o9N0wzY0/edit?usp=drivesdk"}]}, "meetings": {"results": [{"id": "gcal-30o6b8vacrol18j5u7g7jgemp2_20270106T183000Z", "properties": {"hs_meeting_start_time": "2027-01-06T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": "gcal-30o6b8vacrol18j5u7g7jgemp2_20261230T183000Z", "properties": {"hs_meeting_start_time": "2026-12-30T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 424215040737, "properties": {"hs_meeting_start_time": "2026-12-23T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 424215040738, "properties": {"hs_meeting_start_time": "2026-12-16T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 424041211622, "properties": {"hs_meeting_start_time": "2026-12-09T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 424021415655, "properties": {"hs_meeting_start_time": "2026-12-02T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 424041211621, "properties": {"hs_meeting_start_time": "2026-11-18T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 415724732096, "properties": {"hs_meeting_start_time": "2026-11-11T18:30:00Z", "hs_meeting_title": "Patrick and Brennan 1:1 ", "hubspot_owner_id": "87139050"}}, {"id": 416386442988, "properties": {"hs_meeting_start_time": "2026-11-09T16:00:00Z", "hs_meeting_title": "Melissa, Cristal, Brennan, and Savannah Meet (Org Chart/Job Titles and Descriptions)", "hubspot_owner_id": "170042000"}}, {"id": 415713476341, "properties": {"hs_meeting_start_time": "2026-11-04T18:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 406797303543, "properties": {"hs_meeting_start_time": "2026-10-21T17:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050"}}, {"id": 406790090481, "properties": {"hs_meeting_start_time": "2026-10-14T17:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050"}}, {"id": 404073300699, "properties": {"hs_meeting_start_time": "2026-10-13T18:15:00Z", "hs_meeting_title": "LANDON GREGORY and Patrick McClure", "hubspot_owner_id": "87139050"}}, {"id": 405528939246, "properties": {"hs_meeting_start_time": "2026-10-07T17:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050"}}, {"id": 402704247502, "properties": {"hs_meeting_start_time": "2026-09-30T17:30:00Z", "hs_meeting_title": "Anderson Leadership Call", "hubspot_owner_id": "87139050", "hs_attendee_owner_ids": "170042000"}}, {"id": 401545334480, "properties": {"hs_meeting_start_time": "2026-09-28T18:30:00Z", "hs_meeting_title": "Carlos Padilla & Patrick McClure", "hubspot_owner_id": "87139050"}}, {"id": 422911693514, "properties": {"hs_meeting_start_time": "2026-09-18T18:30:00Z", "hs_meeting_title": "BRENNAN GREGORY and Patrick McClure", "hubspot_owner_id": "87139050"}}]}, "owners": {"owners": [{"ownerId": 26684738, "name": "Joachim Koch", "isActive": false}, {"ownerId": 87139050, "name": "Patrick McClure", "isActive": true}, {"ownerId": 164569925, "name": "Hunter Dye", "isActive": false}, {"ownerId": 164569926, "name": "Mark McClure", "isActive": true}, {"ownerId": 164569927, "name": "Jenni Farmer", "isActive": true}, {"ownerId": 165899946, "name": "Emily Ballinger", "isActive": true}, {"ownerId": 169105455, "name": "Michele Carbone", "isActive": true}, {"ownerId": 170041932, "name": "Zach Uvodich", "isActive": true}, {"ownerId": 170042000, "name": "Savannah Mills", "isActive": true}]}, "people": {"people": [{"key": "brennan", "section": "sales", "order": 1, "name": "Brennan Gregory", "role": "Sales Director", "active": "Yes", "match": "brennan", "working_on": "Defining a new sales culture around DATA (Dependable, Aggressive, Tough, Accountable), to be introduced at a group meeting with the sales agents followed by individual check-ins. Coaching Ben in his new sales-agent role, starting with personal lines and small commercial leads. Plans to learn agency operations (carrier relations, loss ratios, financials) from Lance.", "as_of": "2026-11-11", "source": "Fathom: Patrick and Brennan 1:1 (Nov 11), Org chart meeting (Nov 9); recap email (Nov 11)", "history": "[]"}, {"key": "lance", "section": "leadership", "order": 1, "name": "Lance Anderson", "role": "Owner · leadership call with Patrick & Savannah", "active": "Yes", "match": "anderson leadership", "working_on": "Leadership team (Lance, Brennan, Melissa, Cristal) is setting 2027 goals ahead of a full-group review Nov 18. New monthly production reports are improving data in Hawksoft and AgencyZoom. Launching a direct Google Ads campaign; Ben now focuses on sales.", "as_of": "2026-11-04", "source": "Fathom: Anderson Leadership Call (Nov 4)", "history": "[{\"as_of\": \"2026-10-21\", \"meeting\": \"Anderson Leadership Call\", \"working_on\": \"Brennan moving into a Sales Director role as a coach for producers: bi-weekly group huddles and monthly 1:1s. Monthly Hawksoft reports now show each producer's premium; adding individual retention vs. the 87% benchmark, the dollar value of each retention point and annual goals. Shift toward higher-value, higher-retention business. VAs re-quoting terminated auto policies and older leads, with an incentive program. Large renewal moving from State Auto to Liberty (~$200K) due 11/8.\"}, {\"as_of\": \"2026-10-14\", \"meeting\": \"Anderson Leadership Call\", \"working_on\": \"Soft-market plan: VAs build a win-back list from 12 months of lost opportunities in Hawksoft; an AgencyZoom pipeline will recycle leads long term. Brennan to run 2026 reviews and 2027 goal-setting with producers. Producers own welcome calls for lender-referred clients. New monthly Hawksoft report shows each producer's YTD and prior-month new business. First org chart draft presented Friday.\"}]"}, {"key": "managers", "section": "service", "order": 1, "name": "Melissa & Cristal", "role": "Commercial Lines Manager & Personal Lines Manager", "active": "Yes", "match": "melissa, cristal", "working_on": "Finalized the new org chart and job descriptions (Nov 9) and presented them to the team Nov 10; Brennan reports it went well, with the new management roles for Melissa, Cristal and Brennan made clear and real delegation away from Lance. VAs become the first point of contact for calls and non-licensed tasks; simple requests go to the first available person, complex ones to the assigned account manager. Savannah followed up Nov 12 to ask whether individual job descriptions and the VA process were covered or are the next step, and asked Cristal for the latest org chart and job descriptions ahead of the Nov 18 call. Savannah is also helping Cristal organize a shared Google Drive for SOPs, workflows and reference guides.", "as_of": "2026-11-12", "source": "Fathom: Melissa, Cristal, Brennan, and Savannah Meet (Nov 9); Savannah emails (Nov 9–12); Brennan email (Nov 11)", "history": "[]"}], "recruiting": [], "action_items": [{"key": "t1", "owner": "Lance Anderson", "task": "Email Stephanie to add Patrick and Savannah to the monthly production report", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-10", "done_note": "Lance's Nov 10 email confirms Stephanie will copy Patrick, Savannah and Brennan on the monthly production reports going forward."}, {"key": "t2", "owner": "Lance Anderson", "task": "Present the new org chart to the team", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-10", "done_note": "Savannah's Nov 11 follow-up confirms the new org chart was presented at the Nov 10 team meeting."}, {"key": "t3", "owner": "Lance Anderson", "task": "Communicate Ben’s sales-focused role to him", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-11", "done_note": "Brennan's Nov 11 1:1 with Patrick confirms Ben has moved into a sales-agent role focused on personal lines and small commercial leads."}, {"key": "t4", "owner": "Lance Anderson", "task": "Launch the direct Google Ads campaign", "due": "", "active": "Yes", "from": "Anderson Leadership Call (Nov 4)", "done_on": "", "done_note": ""}]}, "recruiting": {"people": [{"key": "brennan", "section": "sales", "order": 1, "name": "Brennan Gregory", "role": "Sales Director", "active": "Yes", "match": "brennan", "working_on": "Defining a new sales culture around DATA (Dependable, Aggressive, Tough, Accountable), to be introduced at a group meeting with the sales agents followed by individual check-ins. Coaching Ben in his new sales-agent role, starting with personal lines and small commercial leads. Plans to learn agency operations (carrier relations, loss ratios, financials) from Lance.", "as_of": "2026-11-11", "source": "Fathom: Patrick and Brennan 1:1 (Nov 11), Org chart meeting (Nov 9); recap email (Nov 11)", "history": "[]"}, {"key": "lance", "section": "leadership", "order": 1, "name": "Lance Anderson", "role": "Owner · leadership call with Patrick & Savannah", "active": "Yes", "match": "anderson leadership", "working_on": "Leadership team (Lance, Brennan, Melissa, Cristal) is setting 2027 goals ahead of a full-group review Nov 18. New monthly production reports are improving data in Hawksoft and AgencyZoom. Launching a direct Google Ads campaign; Ben now focuses on sales.", "as_of": "2026-11-04", "source": "Fathom: Anderson Leadership Call (Nov 4)", "history": "[{\"as_of\": \"2026-10-21\", \"meeting\": \"Anderson Leadership Call\", \"working_on\": \"Brennan moving into a Sales Director role as a coach for producers: bi-weekly group huddles and monthly 1:1s. Monthly Hawksoft reports now show each producer's premium; adding individual retention vs. the 87% benchmark, the dollar value of each retention point and annual goals. Shift toward higher-value, higher-retention business. VAs re-quoting terminated auto policies and older leads, with an incentive program. Large renewal moving from State Auto to Liberty (~$200K) due 11/8.\"}, {\"as_of\": \"2026-10-14\", \"meeting\": \"Anderson Leadership Call\", \"working_on\": \"Soft-market plan: VAs build a win-back list from 12 months of lost opportunities in Hawksoft; an AgencyZoom pipeline will recycle leads long term. Brennan to run 2026 reviews and 2027 goal-setting with producers. Producers own welcome calls for lender-referred clients. New monthly Hawksoft report shows each producer's YTD and prior-month new business. First org chart draft presented Friday.\"}]"}, {"key": "managers", "section": "service", "order": 1, "name": "Melissa & Cristal", "role": "Commercial Lines Manager & Personal Lines Manager", "active": "Yes", "match": "melissa, cristal", "working_on": "Finalized the new org chart and job descriptions (Nov 9) and presented them to the team Nov 10; Brennan reports it went well, with the new management roles for Melissa, Cristal and Brennan made clear and real delegation away from Lance. VAs become the first point of contact for calls and non-licensed tasks; simple requests go to the first available person, complex ones to the assigned account manager. Savannah followed up Nov 12 to ask whether individual job descriptions and the VA process were covered or are the next step, and asked Cristal for the latest org chart and job descriptions ahead of the Nov 18 call. Savannah is also helping Cristal organize a shared Google Drive for SOPs, workflows and reference guides.", "as_of": "2026-11-12", "source": "Fathom: Melissa, Cristal, Brennan, and Savannah Meet (Nov 9); Savannah emails (Nov 9–12); Brennan email (Nov 11)", "history": "[]"}], "recruiting": [], "action_items": [{"key": "t1", "owner": "Lance Anderson", "task": "Email Stephanie to add Patrick and Savannah to the monthly production report", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-10", "done_note": "Lance's Nov 10 email confirms Stephanie will copy Patrick, Savannah and Brennan on the monthly production reports going forward."}, {"key": "t2", "owner": "Lance Anderson", "task": "Present the new org chart to the team", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-10", "done_note": "Savannah's Nov 11 follow-up confirms the new org chart was presented at the Nov 10 team meeting."}, {"key": "t3", "owner": "Lance Anderson", "task": "Communicate Ben’s sales-focused role to him", "due": "", "active": "No", "from": "Anderson Leadership Call (Nov 4)", "done_on": "2026-11-11", "done_note": "Brennan's Nov 11 1:1 with Patrick confirms Ben has moved into a sales-agent role focused on personal lines and small commercial leads."}, {"key": "t4", "owner": "Lance Anderson", "task": "Launch the direct Google Ads campaign", "due": "", "active": "Yes", "from": "Anderson Leadership Call (Nov 4)", "done_on": "", "done_note": ""}]}}, "checks": {}}</script>
+<script>
+/* Stand-in for the Claude dashboard runtime: serves the saved data and runs the page's own drawing code. */
+(function () {
+  const RAW = JSON.parse(document.getElementById('rose-data').textContent);
+  window.SIG = { checks: RAW.checks || {}, db: null, canEdit: false, me: null };
+  const loaders = {}, calcs = {}, draws = {}, cache = {};
+  function get(id) {
+    if (cache[id]) return cache[id];
+    if (calcs[id]) {
+      const c = calcs[id];
+      const args = (c.inputs || []).map((i) => { const v = get(i); return v.status === 'ok' ? v.data : (calcs[i] ? null : []); });
+      try { cache[id] = { status: 'ok', data: c.fn(...args) }; }
+      catch (e) { console.error(id, e); cache[id] = { status: 'error', data: null, message: String(e) }; }
+      return cache[id];
+    }
+    if (Object.prototype.hasOwnProperty.call(RAW.data, id)) {
+      let d = RAW.data[id];
+      if (loaders[id]) {
+        try { d = loaders[id].fn({ answer: d, text: JSON.stringify(d) }); }
+        catch (e) { console.error(id, e); return (cache[id] = { status: 'error', data: [], message: String(e) }); }
+      }
+      return (cache[id] = { status: 'ok', data: d });
+    }
+    return { status: 'missing', data: [] };
+  }
+  function run(name) {
+    const fn = draws[name]; if (!fn) return;
+    document.querySelectorAll('[data-draw="' + name + '"]').forEach((el) => { try { fn(el); } catch (e) { console.error(name, e); } });
+  }
+  window.dash = {
+    data: (id) => Object.assign({ refreshing: false, meta: {} }, get(id)),
+    calc: (id, spec) => { calcs[id] = spec; },
+    loader: (id, spec) => { loaders[id] = spec; },
+    draw: (name, fn) => { if (typeof fn === 'function') draws[name] = fn; else run(name); },
+    onData: (fn) => { try { fn(); } catch (e) { console.error(e); } },
+    refresh: () => {}, params: () => ({}), setParams: () => {}, resetParams: () => {}, setLink: () => {},
+    colors: ['#21418a', '#2f7d4f', '#a2541b', '#8a6d12', '#6b675e'],
+    _runAll: () => Object.keys(draws).forEach(run)
+  };
+})();
+</script>
+
+<style>
+.sig { --sig-acc: #5f6463; font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+.sig-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-lg); }
+.sig-logo { background: #ffffff; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); flex: 0 0 auto; }
+.sig-logo img { display: block; width: 230px; max-width: 100%; height: auto; }
+.sig-mono { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--sig-acc); color: #ffffff; font-family: var(--font-anthropic-serif); font-size: 24px; letter-spacing: .02em; }
+.sig-headtext { flex: 1 1 260px; min-width: 0; }
+.sig-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; line-height: 1.15; }
+.sig-sub { margin: 4px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-take { margin: var(--cds-gap-sm) 0 0; font-size: var(--cds-font-size-body); line-height: 1.5; }
+.sig-take b { font-weight: var(--cds-font-weight-medium); }
+.sig-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+.sig-nav a { font-size: var(--cds-font-size-caption); color: var(--color-fg); text-decoration: none; border: 1px solid var(--color-border-line); border-radius: 999px; padding: 4px 12px; background: var(--color-panel); }
+.sig-nav a:hover { border-color: var(--color-fg-muted); }
+.sig-sec { display: flex; flex-direction: column; gap: var(--cds-gap-md); scroll-margin-top: 12px; }
+.sig-sec-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cds-gap-sm); border-bottom: 2px solid var(--sig-acc); padding-bottom: var(--cds-pad-sm); }
+.sig-sec-head h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+.sig-sec-head p { margin: 2px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sig-toggle .sig-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; overflow: hidden; }
+.sig-toggle button { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 0; padding: 4px 14px; cursor: pointer; }
+.sig-toggle button + button { border-left: 1px solid var(--color-border-line); }
+.sig-toggle button[aria-pressed="true"] { background: var(--sig-acc); color: #ffffff; }
+.sig-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: var(--cds-gap-md); min-height: 80px; }
+.sig-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.sig-card h3 { margin: 0; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+.sig-card .sig-role { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-cardtop { display: flex; justify-content: space-between; gap: var(--cds-gap-sm); align-items: flex-start; }
+.sig-badge { font-size: 11px; border-radius: 999px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); }
+.sig-badge.on { color: var(--color-ok); border-color: currentColor; }
+.sig-meets { display: grid; grid-template-columns: 1fr 1fr; gap: var(--cds-gap-sm); }
+.sig-meet { border-radius: calc(var(--cds-radius) - 2px); background: var(--color-bg); padding: var(--cds-pad-sm); min-width: 0; }
+.sig-meet .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--color-fg-muted); }
+.sig-meet .when { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; margin-top: 2px; }
+.sig-meet .what, .sig-meet .who { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); overflow-wrap: anywhere; }
+.sig-meet .none { font-size: var(--cds-font-size-caption); color: var(--color-warn); margin-top: 2px; }
+.sig-work { margin: 0; font-size: var(--cds-font-size-caption); line-height: 1.55; }
+.sig-work strong { font-weight: var(--cds-font-weight-medium); }
+.sig-foot { font-size: 11px; color: var(--color-fg-muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.sig-foot a { color: inherit; }
+.sig-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md); border: 1px dashed var(--color-border-line); border-radius: var(--cds-radius); }
+.sig-tablewrap { overflow-x: auto; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); }
+.sig-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.sig-table th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: 8px 12px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.sig-table td { padding: 10px 12px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.sig-table tr:last-child td { border-bottom: 0; }
+.sig-table td.nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sig-table .overdue { color: var(--color-bad); }
+.sig-stages { display: flex; gap: 4px; flex-wrap: wrap; }
+.sig-stage { font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--color-border-line); color: var(--color-fg-muted); white-space: nowrap; }
+.sig-stage.done { background: color-mix(in srgb, var(--sig-acc) 18%, transparent); color: var(--color-fg); }
+.sig-stage.now { background: var(--sig-acc); color: #fff; border-color: var(--sig-acc); }
+.sig-origin { font-size: 11px; color: var(--color-fg-muted); }
+.sig-check { display: inline-block; width: 16px; height: 16px; border: 1.5px solid var(--color-fg-muted); border-radius: 4px; line-height: 14px; text-align: center; font-size: 12px; }
+.sig-check.done { background: var(--color-ok); border-color: var(--color-ok); color: #fff; }
+.sig-cb { width: 16px; height: 16px; accent-color: var(--color-ok); cursor: pointer; margin: 0; }
+.sig-table tr.sig-grp td { background: var(--color-bg); font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg); padding-top: 12px; }
+.sig-lib { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: var(--cds-gap-sm); min-height: 40px; }
+.sig-lib li { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.sig-lib a { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-body); text-decoration: none; overflow-wrap: anywhere; }
+.sig-lib a:hover { text-decoration: underline; }
+.sig-lib .meta { font-size: 11px; color: var(--color-fg-muted); }
+.sig-lib li.sig-libempty { grid-column: 1 / -1; border-style: dashed; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.sig-libfolder { color: inherit; }
+.sig-donetask { text-decoration: line-through; color: var(--color-fg-muted); }
+.sig-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.sig-details { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.sig-details summary { cursor: pointer; }
+.sig-details ul { margin: 8px 0 0; padding-left: 18px; line-height: 1.6; }
+[data-dash-source-state=refreshing] { opacity: .5; }
+@media (max-width: 420px) { .sig-meets { grid-template-columns: 1fr; } }
+.sig-bullets { margin: 0; padding-left: 18px; font-size: var(--cds-font-size-caption); line-height: 1.5; display: flex; flex-direction: column; gap: 4px; }
+.sig-bullets li::marker { color: var(--color-fg-muted); }
+
+/* frozen section menu */
+.sig-nav { position: sticky; top: 0; z-index: 30; background: var(--color-bg); padding: 10px 0; box-shadow: 0 1px 0 var(--color-border-line); }
+section[id] { scroll-margin-top: 64px; }
+
+/* past notes */
+.sig-hist { font-size: var(--cds-font-size-caption); border-top: 1px dashed var(--color-border-line); padding-top: 6px; }
+.sig-hist summary { cursor: pointer; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); }
+.sig-hist-entry { margin-top: 8px; }
+.sig-hist-date { font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--color-fg-muted); margin-bottom: 2px; }
+
+/* frozen logo in the section menu */
+.sig-nav { align-items: center; }
+.sig-navlogo { display: inline-flex; align-items: center; margin-right: 6px; }
+.sig-navlogo:empty { display: none; }
+.sig-navlogo img { display: block; height: 30px; width: auto; max-width: 140px; object-fit: contain; background: #ffffff; border: 1px solid var(--color-border-line); border-radius: 6px; padding: 2px 6px; }
+section[id] { scroll-margin-top: 72px; }
+</style>
+
+<div class="sig">
+  <header class="sig-head" id="top">
+    <div class="sig-logo"><img src="data:image/png;base64,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" alt="Anderson Insurance Group logo"></div>
+    <div class="sig-headtext">
+      <h1 class="sig-title">Anderson GMI Insurance Agency</h1>
+      <p class="sig-sub">Client dashboard · Impact Performance Team</p>
+    </div>
+  </header>
+
+  <nav class="sig-nav" aria-label="Sections"><span class="sig-navlogo" aria-hidden="true"></span>
+    <a href="#sales" data-nav-sec="sales">Sales</a><a href="#sales-call" data-nav-sec="sales_call">Sales Call</a><a href="#leadership" data-nav-sec="leadership">Leadership</a><a href="#service" data-nav-sec="service">Service &amp; Ops</a><a href="#recruiting">Recruiting</a><a href="#library">Client Library</a><a href="#tasks">Open tasks</a>
+  </nav>
+
+  <section class="sig-sec" id="sales" data-hide-empty="sales">
+    <div class="sig-sec-head">
+      <div><h2>Sales</h2><p>Sales leadership Patrick coaches</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="sales" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="sales-call" data-hide-empty="sales_call">
+    <div class="sig-sec-head">
+      <div><h2>Sales Call</h2><p>Group sales sessions</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="sales_call" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="leadership" data-hide-empty="leadership">
+    <div class="sig-sec-head">
+      <div><h2>Leadership</h2><p>Leadership call with Lance, Patrick and Savannah</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="leadership" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="service" data-hide-empty="service">
+    <div class="sig-sec-head">
+      <div><h2>Service &amp; Ops</h2><p>Service and operations managers Savannah meets with</p></div>
+    </div>
+    <div class="sig-cards" data-draw="cards" data-sec="service" data-source="roster"></div>
+  </section>
+
+  <section class="sig-sec" id="recruiting">
+    <div class="sig-sec-head">
+      <div><h2>Recruiting</h2><p>Roles IPT is recruiting for</p></div>
+    </div>
+    <div class="sig-tablewrap">
+      <table class="sig-table" data-source="recruiting" data-row-key="key">
+        <thead><tr><th data-field="role">Role</th><th data-field="stage">Stage</th><th data-field="hire">Hire</th><th data-field="notes">Notes</th></tr></thead>
+        <tbody data-draw="recruiting"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sig-sec" id="library">
+    <div class="sig-sec-head">
+      <div><h2>Client Library</h2><p>Files in the shared Anderson folder in Google Drive</p></div>
+    </div>
+    <ul class="sig-lib" data-draw="library" data-source="library"></ul>
+  </section>
+
+  <section class="sig-sec" id="tasks">
+    <div class="sig-sec-head">
+      <div><h2>Open tasks</h2><p>Lance Anderson</p></div>
+    </div>
+    <div class="sig-tablewrap">
+      <table class="sig-table" data-source="tasks_all" data-row-key="key">
+        <thead><tr><th data-field="active"><span class="sig-sr">Done</span></th><th data-field="task">Task</th><th data-field="due">Due</th><th data-field="from">From</th></tr></thead>
+        <tbody data-draw="tasks"></tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+
+<script>
+// Rolling window for the HubSpot meeting query: 45 days back, 60 days ahead.
+(function () {
+  const day = 86400000, now = Date.now();
+  const iso = (t) => new Date(t).toISOString().slice(0, 10);
+  const p = dash.params();
+  const since = iso(now - 45 * day), until = iso(now + 60 * day);
+  if (p.since !== since || p.until !== until) dash.setParams({ since, until });
+})();
+
+
+dash.loader('meetings', {
+  description: 'Flattens each HubSpot meeting record into one row of its properties.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    if (!a || !Array.isArray(a.results)) throw new Error('HubSpot returned no results list');
+    return a.results.map((r) => Object.assign({ id: String(r.id) }, r.properties || {}));
+  }
+});
+
+dash.loader('owners', {
+  description: 'Turns the HubSpot owners list into rows of owner id and name.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    const list = (a && a.owners) || [];
+    return list.map((o) => ({ ownerId: String(o.ownerId), name: o.name, isActive: o.isActive }));
+  }
+});
+
+dash.loader('library', {
+  description: 'Turns the Google Drive file list into rows of title, type, last modified and link.',
+  fn: ({ answer }) => {
+    let a = answer;
+    if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { throw new Error(a); } }
+    const files = (a && Array.isArray(a.files)) ? a.files : [];
+    return files.map((f) => ({ id: String(f.id), title: f.title || '', mimeType: f.mimeType || '', modifiedTime: f.modifiedTime || '', viewUrl: f.viewUrl || '' }));
+  }
+});
+
+
+['people', 'recruiting', 'action_items'].forEach((key) => {
+  dash.loader(key, {
+    description: 'Reads the ' + key + ' list from the notes file.',
+    fn: ({ answer }) => {
+      let a = answer;
+      if (typeof a === 'string') { a = JSON.parse(a); }
+      if (!a || !Array.isArray(a[key])) throw new Error('The notes file has no ' + key + ' list');
+      return a[key];
+    }
+  });
+});
+
+dash.calc('roster', {
+  inputs: ['people', 'meetings', 'owners'],
+  title: 'People with last and next IPT meeting',
+  description: 'Each person or group from the notes, with their latest past and earliest upcoming HubSpot meeting whose title matches them (and, where set, that includes the IPT owner).',
+  fn: (people, meetings, owners) => {
+    const names = {};
+    owners.forEach((o) => { names[o.ownerId] = o.name; });
+    const now = Date.now();
+    const skip = { CANCELED: 1, NO_SHOW: 1, RESCHEDULED: 1 };
+    return people.map((p) => {
+      const words = String(p.match || '').split('|').map((w) => w.trim().toLowerCase()).filter(Boolean);
+      const hits = meetings.filter((m) => {
+        const title = String(m.hs_meeting_title || '').toLowerCase();
+        if (!words.some((w) => title.includes(w))) return false;
+        if (skip[m.hs_meeting_outcome]) return false;
+        if (p.ipt_owner) {
+          const ids = [m.hubspot_owner_id].concat(String(m.hs_attendee_owner_ids || '').split(';'));
+          if (!ids.includes(String(p.ipt_owner))) return false;
+        }
+        return true;
+      }).map((m) => {
+        const ids = [m.hubspot_owner_id].concat(String(m.hs_attendee_owner_ids || '').split(';')).filter(Boolean);
+        const who = [...new Set(ids)].map((i) => names[i]).filter(Boolean).join(', ');
+        return { t: Date.parse(m.hs_meeting_start_time), title: String(m.hs_meeting_title || '').trim(), who };
+      }).filter((m) => !isNaN(m.t));
+      const past = hits.filter((m) => m.t <= now).sort((a, b) => b.t - a.t)[0];
+      const next = hits.filter((m) => m.t > now).sort((a, b) => a.t - b.t)[0];
+      return {
+        key: p.key, section: p.section, order: Number(p.order), name: p.name, role: p.role, active: p.active,
+        last_date: past ? new Date(past.t).toISOString() : (p.fallback_last_date || ''),
+        last_title: past ? past.title : (p.fallback_last_title || ''),
+        last_with: past ? past.who : (p.fallback_last_with || ''),
+        last_from: past ? 'HubSpot' : 'notes',
+        next_date: next ? new Date(next.t).toISOString() : (meetings.length ? '' : (p.fallback_next_date || '')),
+        next_title: next ? next.title : (meetings.length ? '' : (p.fallback_next_title || '')),
+        next_with: next ? next.who : (meetings.length ? '' : (p.fallback_next_with || '')),
+        next_from: next ? 'HubSpot' : 'notes',
+        working_on: p.working_on, as_of: p.as_of, history: (typeof p.history === 'string' ? p.history : JSON.stringify(p.history || [])), source: p.source, hubspot_id: p.hubspot_id || '',
+        hits: JSON.stringify(hits)
+      };
+    });
+  }
+});
+
+dash.calc('tasks_all', {
+  inputs: ['action_items'],
+  title: "Anderson team tasks",
+  description: "Action items for Anderson team members from recent call recaps. IPT team tasks are left out.",
+  fn: (action_items) => action_items.map((a) => ({
+    key: a.key, owner: a.owner, task: a.task, due: a.due || '', active: a.active, from: a.from,
+    done_on: a.done_on || '', done_note: a.done_note || ''
+  }))
+});
+
+dash.calc('summary', {
+  inputs: ['roster', 'tasks_all'],
+  title: 'Headline: next touchpoint and open tasks',
+  description: 'The earliest upcoming IPT meeting across active people and groups.',
+  fn: (roster, tasks_all) => {
+    const upcoming = (roster || []).filter((r) => r.active === 'Yes' && r.next_date)
+      .sort((a, b) => Date.parse(a.next_date) - Date.parse(b.next_date))[0];
+    return [{
+      next_title: upcoming ? upcoming.next_title : '',
+      next_date: upcoming ? upcoming.next_date : ''
+    }];
+  }
+});
+</script>
+
+<script>
+(function () {
+  for (const a of document.querySelectorAll('.sig-nav a')) {
+    a.addEventListener('click', () => dash.setLink(a.getAttribute('href').slice(1)));
+  }
+})();
+
+
+dash.onData(() => {
+  const r = dash.data('roster');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) return;
+  const has = (sec) => r.data.some((x) => x.section === sec && x.active === 'Yes');
+  for (const s of document.querySelectorAll('[data-hide-empty]')) s.hidden = !has(s.getAttribute('data-hide-empty'));
+  for (const a of document.querySelectorAll('[data-nav-sec]')) a.hidden = !has(a.getAttribute('data-nav-sec'));
+});
+
+/* Split each person's meetings into last and next at the moment the page is drawn, so a meeting moves to "last" as soon as its start time passes. */
+window.sigNow = function (x) {
+  let hits = [];
+  try { hits = JSON.parse(x.hits || '[]'); } catch (e) { hits = []; }
+  if (!hits.length) return x;
+  const now = Date.now();
+  const past = hits.filter((m) => m.t <= now).sort((a, b) => b.t - a.t)[0];
+  const next = hits.filter((m) => m.t > now).sort((a, b) => a.t - b.t)[0];
+  const y = Object.assign({}, x);
+  if (past) { y.last_date = new Date(past.t).toISOString(); y.last_title = past.title; y.last_with = past.who; }
+  y.next_date = next ? new Date(next.t).toISOString() : '';
+  y.next_title = next ? next.title : '';
+  y.next_with = next ? next.who : '';
+  return y;
+};
+setInterval(() => dash.draw('cards'), 5 * 60 * 1000);
+
+window.sigFmt = function (v) {
+  if (!v) return '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return d3.utcFormat('%a %b %-d')(new Date(v + 'T00:00:00Z'));
+  const d = new Date(v);
+  return isNaN(d) ? v : d3.timeFormat('%a %b %-d · %-I:%M %p')(d);
+};
+window.sigFmtDay = function (v) {
+  if (!v) return '';
+  return d3.utcFormat('%b %-d')(new Date(v.slice(0, 10) + 'T00:00:00Z'));
+};
+
+function sigMark(el, source, field, key) {
+  el.setAttribute('data-source', source);
+  el.setAttribute('data-field', field);
+  el.setAttribute('data-where', 'key=' + encodeURIComponent(key));
+  return el;
+}
+window.sigMark = sigMark;
+
+function sigEl(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+window.sigEl = sigEl;
+
+
+window.sigPast = function (raw) {
+  let h = raw;
+  for (let i = 0; i < 3 && typeof h === 'string'; i++) { try { h = JSON.parse(h || '[]'); } catch (e) { h = []; } }
+  if (!Array.isArray(h)) return null;
+  h = h.filter((e) => e && (e.working_on || e.notes)).sort((a, b) => String(b.as_of || '').localeCompare(String(a.as_of || '')));
+  if (!h.length) return null;
+  const det = sigEl('details', 'sig-hist');
+  det.append(sigEl('summary', null, 'Past notes (' + h.length + ')'));
+  h.forEach((e) => {
+    const blk = sigEl('div', 'sig-hist-entry');
+    blk.append(sigEl('div', 'sig-hist-date', (e.meeting ? e.meeting + ' · ' : '') + (window.sigFmt(e.as_of) || '')));
+    const ul = sigEl('ul', 'sig-bullets');
+    String(e.working_on || e.notes || '').split(/\n|(?<=[.!?])\s+(?=[A-Z0-9$(“"])/).map((s) => s.replace(/^[•\-\s]+/, '').trim()).filter(Boolean).forEach((s) => ul.append(sigEl('li', null, s)));
+    blk.append(ul);
+    det.append(blk);
+  });
+  return det;
+};
+
+dash.draw('cards', (el) => {
+  const sec = el.getAttribute('data-sec');
+  const r = dash.data('roster');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) {
+    el.replaceChildren();
+    if (r.status === 'loading') { el.classList.add('dash-skeleton'); }
+    else { el.classList.remove('dash-skeleton'); el.append(sigEl('div', 'sig-empty', r.status === 'connect' ? 'Waiting for HubSpot access…' : 'Failed to load')); }
+    return;
+  }
+  el.classList.remove('dash-skeleton');
+  const want = 'Yes';
+  const rows = r.data.filter((x) => x.section === sec && x.active === want).sort((a, b) => a.order - b.order);
+  if (!rows.length) {
+    el.replaceChildren(sigEl('div', 'sig-empty', want === 'Yes' ? 'No active entries in this section.' : 'No inactive entries in this section.'));
+    return;
+  }
+  const cards = rows.map((x0) => {
+    const x = window.sigNow(x0);
+    const c = sigEl('article', 'sig-card');
+    c.id = 'card-' + x.key;
+    const top = sigEl('div', 'sig-cardtop');
+    const head = sigEl('div');
+    head.append(sigMark(sigEl('h3', null, x.name), 'roster', 'name', x.key));
+    head.append(sigMark(sigEl('p', 'sig-role', x.role), 'roster', 'role', x.key));
+    top.append(head);
+    c.append(top);
+
+    const meets = sigEl('div', 'sig-meets');
+    [['last', 'Last IPT meeting'], ['next', 'Next IPT meeting']].forEach(([k, label]) => {
+      const m = sigEl('div', 'sig-meet');
+      m.append(sigEl('div', 'lbl', label));
+      if (x[k + '_date']) {
+        m.append(sigMark(sigEl('div', 'when', window.sigFmt(x[k + '_date'])), 'roster', k + '_date', x.key));
+        m.append(sigMark(sigEl('div', 'what', x[k + '_title']), 'roster', k + '_title', x.key));
+        if (x[k + '_with']) {
+          const w = sigEl('div', 'who', 'with ');
+          w.append(sigMark(sigEl('span', null, x[k + '_with']), 'roster', k + '_with', x.key));
+          m.append(w);
+        }
+      } else {
+        m.append(sigEl('div', 'none', k === 'next' ? 'None scheduled' : 'None found'));
+      }
+      meets.append(m);
+    });
+    c.append(meets);
+
+    const lines = String(x.working_on || '').split(/\n|(?<=[.!?])\s+(?=[A-Z0-9$(“"])/).map((s) => s.replace(/^[•\-\s]+/, '').trim()).filter(Boolean);
+    if (lines.length) {
+      const ul = sigMark(sigEl('ul', 'sig-bullets'), 'roster', 'working_on', x.key);
+      lines.forEach((s) => ul.append(sigEl('li', null, s)));
+      c.append(ul);
+    }
+
+    const past = window.sigPast(x.history);
+    if (past) c.append(past);
+    const foot = sigEl('div', 'sig-foot');
+    const asof = sigEl('span', null, 'Notes as of ');
+    asof.append(sigMark(sigEl('span', null, window.sigFmt(x.as_of)), 'roster', 'as_of', x.key));
+    foot.append(asof);
+    c.append(foot);
+    return c;
+  });
+  el.replaceChildren(...cards);
+});
+
+window.SIG = window.SIG || { checks: {}, db: null, canEdit: false, me: null };
+window.sigIsDone = function (x) {
+  const c = window.SIG.checks[x.key];
+  return c && typeof c.done === 'boolean' ? c.done : x.active === 'No';
+};
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  const db = await window.claude.use('db');
+  if (!db) return;
+  const user = await window.claude.use('user');
+  window.SIG.db = db;
+  window.SIG.canEdit = user ? (await user.canEdit()) === true : false;
+  window.SIG.me = user ? await user.id() : null;
+  db.collection('task_checks').onSnapshot((snap) => {
+    const next = {};
+    for (const doc of snap.docs) next[doc.id] = doc.data();
+    window.SIG.checks = next;
+    dash.draw('tasks');
+  }, () => {});
+  dash.draw('tasks');
+})();
+
+const SIG_KIND = (m) => /folder/.test(m) ? 'Folder' : /document/.test(m) ? 'Doc' : /spreadsheet|excel|sheet/.test(m) ? 'Sheet' : /presentation|powerpoint/.test(m) ? 'Slides' : /pdf/.test(m) ? 'PDF' : /image/.test(m) ? 'Image' : 'File';
+dash.draw('library', (ul) => {
+  const r = dash.data('library');
+  if (r.status === 'loading') { ul.replaceChildren(); return; }
+  const item = (f) => {
+    const li = sigEl('li');
+    const a = sigEl('a', null, f.title);
+    a.href = f.viewUrl; a.target = '_blank'; a.rel = 'noopener';
+    a.setAttribute('data-source', 'library'); a.setAttribute('data-field', 'title'); a.setAttribute('data-where', 'id=' + encodeURIComponent(f.id));
+    li.append(a);
+    li.append(sigEl('span', 'meta', SIG_KIND(f.mimeType) + (f.modifiedTime ? ' · updated ' + window.sigFmtDay(f.modifiedTime) : '')));
+    return li;
+  };
+  const out = r.status === 'ok' ? r.data.map(item) : [];
+  if (!out.length) {
+    out.push(sigEl('li', 'sig-libempty', r.status === 'ok' ? 'Nothing has been shared in the client folder yet.' : (r.status === 'connect' ? 'Waiting for Google Drive access…' : 'Failed to load')));
+  }
+  ul.replaceChildren(...out);
+});
+
+const SIG_STAGES = ['Active candidates', 'Onboarding', 'Role filled'];
+
+dash.draw('recruiting', (tb) => {
+  const r = dash.data('recruiting');
+  if (r.status !== 'ok') {
+    tb.replaceChildren();
+    if (r.status !== 'loading') { const tr = sigEl('tr'); const td = sigEl('td', null, 'Failed to load'); td.colSpan = 4; tr.append(td); tb.append(tr); }
+    return;
+  }
+  const want = 'Yes';
+  const rows = r.data.filter((x) => x.active === want).sort((a, b) => Number(a.order) - Number(b.order));
+  if (!rows.length) {
+    const tr = sigEl('tr'); const td = sigEl('td', 'sig-origin', want === 'Yes' ? "No open Anderson roles right now." : 'No inactive roles.'); td.colSpan = 4; tr.append(td);
+    tb.replaceChildren(tr);
+    return;
+  }
+  tb.replaceChildren(...rows.map((x) => {
+    const tr = sigEl('tr'); tr.setAttribute('data-key', encodeURIComponent(x.key));
+    tr.append(sigEl('td', null, x.role));
+    const st = sigEl('td');
+    const at = SIG_STAGES.indexOf(x.stage);
+    st.append(sigEl('span', 'sig-stage' + (at < 0 ? '' : ' now'), at < 0 ? 'Not launched' : x.stage));
+    tr.append(st);
+    tr.append(sigEl('td', null, x.hire || '—'));
+    tr.append(sigEl('td', null, x.notes));
+    return tr;
+  }));
+});
+
+dash.draw('tasks', (tb) => {
+  const r = dash.data('tasks_all');
+  if (r.status !== 'ok' || !Array.isArray(r.data)) {
+    tb.replaceChildren();
+    if (r.status !== 'loading') { const tr = sigEl('tr'); const td = sigEl('td', null, 'Failed to load'); td.colSpan = 4; tr.append(td); tb.append(tr); }
+    return;
+  }
+  const want = 'Yes';
+  const SIG_TASK_OWNERS = [...new Set(r.data.map((x) => x.owner))];
+  const today = new Date().toISOString().slice(0, 10);
+  const S = window.SIG;
+  /* completed tasks stay visible for one week after they were checked off, then drop off; open tasks always stay */
+  const cut = new Date(); cut.setUTCHours(0, 0, 0, 0); cut.setUTCDate(cut.getUTCDate() - 7);
+  const showTask = (x) => {
+    if (!window.sigIsDone(x)) return want === 'Yes';
+    const c = S.checks[x.key];
+    const doneOn = c && c.done && c.doneAt ? c.doneAt : x.done_on;
+    return !!doneOn && new Date(String(doneOn).slice(0, 10)) >= cut;
+  };
+  const rows = r.data.filter((x) => SIG_TASK_OWNERS.includes(x.owner) && showTask(x)).sort((a, b) =>
+    SIG_TASK_OWNERS.indexOf(a.owner) - SIG_TASK_OWNERS.indexOf(b.owner) || (window.sigIsDone(a) - window.sigIsDone(b)) || String(a.due || '9999').localeCompare(String(b.due || '9999')));
+  if (!rows.length) {
+    const tr = sigEl('tr'); const td = sigEl('td', 'sig-origin', want === 'Yes' ? 'No open tasks.' : 'No completed tasks yet.'); td.colSpan = 4; tr.append(td);
+    tb.replaceChildren(tr);
+    return;
+  }
+  let lastOwner = null;
+  tb.replaceChildren(...rows.flatMap((x) => {
+    const out = [];
+    if (x.owner !== lastOwner) {
+      lastOwner = x.owner;
+      const g = sigEl('tr', 'sig-grp'); const gd = sigEl('td', null, x.owner); gd.colSpan = 4; g.append(gd);
+      out.push(g);
+    }
+    const done = window.sigIsDone(x);
+    const chk = S.checks[x.key];
+    const tr = sigEl('tr'); tr.setAttribute('data-key', encodeURIComponent(x.key));
+    const ck = sigEl('td');
+    if (S.canEdit && S.db) {
+      const box = document.createElement('input');
+      box.type = 'checkbox'; box.className = 'sig-cb'; box.checked = done;
+      box.setAttribute('aria-label', (done ? 'Mark open: ' : 'Mark done: ') + x.task);
+      box.addEventListener('change', async () => {
+        const body = box.checked
+          ? { done: true, doneAt: new Date().toISOString(), doneBy: S.me || null }
+          : { done: false, doneAt: null, doneBy: S.me || null };
+        const prev = S.checks[x.key];
+        S.checks = Object.assign({}, S.checks, { [x.key]: body });
+        dash.draw('tasks');
+        try { await S.db.doc('task_checks/' + x.key).set(body); }
+        catch (e) { S.checks = Object.assign({}, S.checks, { [x.key]: prev }); dash.draw('tasks'); }
+      });
+      ck.append(box);
+    } else {
+      const box = sigEl('span', 'sig-check' + (done ? ' done' : ''), done ? '✓' : '');
+      box.setAttribute('role', 'img'); box.setAttribute('aria-label', done ? 'Completed' : 'Open');
+      ck.append(box);
+    }
+    tr.append(ck);
+    const task = sigEl('td');
+    task.append(sigEl('div', done ? 'sig-donetask' : null, x.task));
+    const doneOn = chk && chk.done && chk.doneAt ? chk.doneAt : x.done_on;
+    const doneNote = chk && chk.done ? '' : x.done_note;
+    if (done && (doneOn || doneNote)) {
+      task.append(sigEl('div', 'sig-origin', 'Done' + (doneOn ? ' ' + window.sigFmtDay(doneOn) : '') + (doneNote ? ': ' + doneNote : '')));
+    }
+    tr.append(task);
+    tr.append(sigEl('td', 'nowrap' + (!done && x.due && x.due < today ? ' overdue' : ''), x.due ? window.sigFmtDay(x.due) : '—'));
+    tr.append(sigEl('td', 'sig-origin', x.from));
+    out.push(tr);
+    return out;
+  }));
+});
+
+dash.draw('next_title', (el) => {
+  const s = dash.data('summary');
+  el.textContent = s.status === 'ok' && s.data && s.data[0] && s.data[0].next_title ? s.data[0].next_title : '—';
+});
+dash.draw('next_date', (el) => {
+  const s = dash.data('summary');
+  el.textContent = s.status === 'ok' && s.data && s.data[0] && s.data[0].next_date ? window.sigFmt(s.data[0].next_date) : '—';
+});
+</script>
+
+<script>
+(function () {
+  const slot = document.querySelector('.sig-navlogo');
+  const box = document.querySelector('.sig-head .sig-logo');
+  if (!slot || !box) return;
+  const sync = () => {
+    const img = box.querySelector('img');
+    if (!img || !img.getAttribute('src')) return;
+    const cur = slot.querySelector('img');
+    if (cur && cur.getAttribute('src') === img.getAttribute('src')) return;
+    const c = document.createElement('img');
+    c.src = img.getAttribute('src');
+    c.alt = '';
+    slot.replaceChildren(c);
+  };
+  sync();
+  new MutationObserver(sync).observe(box, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] });
+})();
+</script>
+
+<script>dash._runAll();</script>
+</div></body></html>
